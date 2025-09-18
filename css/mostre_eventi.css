@@ -1,0 +1,202 @@
+html body {
+    padding: 0;
+    margin: 0;
+    background-color: seashell;
+    font-family: "Montserrat", sans-serif;
+}
+
+.head {
+    background-color: black;
+    padding: 5px 15px 5px 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name_logo {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.navbar-collapse ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-left: -10px;
+    padding: 0;
+}
+
+.navbar-collapse ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.navbar-collapse ul li a:hover {
+    color: #ddd;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.btn {
+    font-size: 15px;
+    padding: 15px 24px;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+}
+
+.btn:hover {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 70px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right, #d8d8d8 0%, #dddddd 50%, #d8d8d8 100%);
+    border-radius: 8px;
+    border-color: #505050;
+    margin: 90px 100px;
+    padding: 10px;
+    box-shadow: 0 0 0 1px rgba(41, 41, 41, 0.1);
+    justify-content: space-between;
+}
+
+.sx {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sx h2{
+    text-align: left;
+    margin-left: 40px;
+    font-size: 30px;
+}
+
+.sx h3{
+    text-align: left;
+    margin-left: 40px;
+    font-size: 22px;
+}
+
+.sx p{
+    text-align: left;
+    margin-left: 40px;
+}
+
+.sx .description + p, .mostra {
+     max-width: 60%;
+}
+
+.data_ora {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: left;
+    gap: 70px;
+}
+
+.dx {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 50px;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+.dx a {
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    background-color: rgb(37, 37, 37);
+    padding: 15px;
+    align-items: center;
+    margin-left: 15px;
+    width: 70px;
+}
+
+.dx a:hover {
+    background-color: white;
+    color: rgb(37, 37, 37);
+}
+
+.dx img {
+    border-radius: 10px;
+    width: 370px;
+    height: 260px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    margin-top: 50px;
+}
+
+.footer_left {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.footer_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: -70px;
+    padding: 20px;
+}
+
+.link_footer {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+.link_footer:hover {
+    color: #cdc2bf;
+    text-decoration: underline;
+}
+
+.footer_right {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-right: 50px;
+    gap: 15px;
+}
+
+.footer_right div {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
