@@ -1,0 +1,76 @@
+body{
+    background: seashell;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    gap: 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(69, 69, 69);
+    gap: 15px;
+    margin-top: -50px;
+}
+
+.header img {
+    width: 100px;
+    height: 100px;
+}
+.form-text {
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    background-color: rgb(69, 69, 69);
+    padding: 60px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+}
+
+::placeholder {
+    color: rgb(158, 158, 158);
+}
+
+form h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+form .form-control {
+    width: 400px;
+    max-width: 400px;
+}
+
+form label, .form-text {
+    text-align: left;
+    width: 100%;
+}
+
+form .mb-3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    background-color: seashell;
+    color: rgb(69, 69, 69);
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(35, 35, 35);
+    color: white;
+}

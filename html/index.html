@@ -5,7 +5,7 @@
     <!--<link rel="stylesheet" href="/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="/css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <title>Mouseion</title>
+    <title>Mouseion - Home Page</title>
 </head>
 <body>
 <header class="head">
@@ -34,7 +34,7 @@
             </ul>
         </div>
         <div>
-            <button class="button">Sign in</button>
+            <a href="sign_in.html" class="btn">Sign in</a>
         </div>
     </nav>
 </header>
@@ -49,23 +49,91 @@
     <section class="parte_1">
         <p>In primo piano</p>
         <div class="row_images">
-            <figure>
-                <img src="/images/mostra_1.jpg" alt="prima mostra">
+            <figure class="rows">
+                <div class="image-wrapper_1">
+                    <img src="/images/mostra_1.jpg" alt="prima mostra">
+                </div>
                 <figcaption>Colazione impressionista</figcaption>
             </figure>
-            <figure>
-                <img src="/images/mostra_2.jpeg" alt="seconda mostra">
+            <figure class="rows">
+                <div class="image-wrapper_1">
+                    <img src="/images/mostra_2.jpeg" alt="seconda mostra">
+                </div>
                 <figcaption>Van Gogh</figcaption>
             </figure>
-            <figure>
-                <img src="/images/mostra_3.jpg" alt="terza mostra">
+            <figure class="rows">
+                <div class="image-wrapper_1">
+                    <img src="/images/mostra_3.jpg" alt="terza mostra">
+                </div>
                 <figcaption>Visita la nostra galleria</figcaption>
             </figure>
         </div>
     </section>
+    <section class="novita">
+        <p>Novità</p>
+        <div class="col_images">
+            <figure class="columns">
+                <div class="image-wrapper_2">
+                    <img src="/images/kandinsky.jpg" alt="Kandinsky">
+                </div>
+                <figcaption class="description">
+                    <h3>Wassily Kandinsky</h3>
+                    <p>Una mostra dedicata ad uno dei più celebri artisti dell'astrattismo </p>
+                </figcaption>
+            </figure>
+            <figure class="columns">
+                <div class="image-wrapper_2">
+                    <img src="/images/modern_art.jpg" alt="Galleria di arte moderna">
+                </div>
+                <figcaption class="description">
+                    <h3>Modern Art</h3>
+                    <p>Selezione di opere contemporanee in esposizione temporanea, fino al 27/09/2026</p>
+                </figcaption>
+            </figure>
+            <figure class="columns">
+                <div class="image-wrapper_2">
+                    <img src="/images/evening_event.jpg" alt="Evento serale">
+                </div>
+                <figcaption class="description">
+                    <h3>Evento serale</h3>
+                    <p>Una serata dedicata agli artisti più celebri e alle loro opere più famose. Uno sguardo ravvicinato alla vita grazie alle testimonianze di amici e parenti</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="ubicazione">
+        <div class="map">
+            <p>Puoi trovarci qui</p>
+            <img src="/images/maps.jpeg" alt="ubicazione">
+        </div>
+        <div class="civico">
+            <p>Via da qui, 27 Casa Mia</p>
+            <p>Se non ci trovate chiedete in giro!!</p>
+        </div>
+    </section>
 </main>
 <footer>
-
+    <div class="footer_left">
+        <p>Questo sito è protetto da copyright</p>
+        <img class="footer_logo" src="/images/copyright.svg" width="30" height="30" alt="copyright">
+    </div>
+    <div class="footer_center">
+        <a class="link_footer" href="#">FAQ</a>
+        <a class="link_footer" href="#">Biglietterie</a>
+        <a class="link_footer" href="#">Lavora con noi</a>
+        <a class="link_footer" href="#">About us</a>
+    </div>
+    <div class="footer_right">
+        <p>Trovaci anche su</p>
+        <div>
+            <img class="footer_logo" src="/images/insta.svg" width="30" height="30" alt="instagram">
+            <a class="link_footer" href="#">Instagram</a>
+        </div>
+        <div>
+            <img class="footer_logo" src="/images/facebook.svg" width="30" height="30" alt="facebook">
+            <a class="link_footer" href="#">Facebook</a>
+        </div>
+    </div>
 </footer>
 
 <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>-->
