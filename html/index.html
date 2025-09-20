@@ -2,34 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--<link rel="stylesheet" href="/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/logo.png" type="image/png">
     <title>Mouseion - Home Page</title>
 </head>
 <body>
 <header class="head">
-    <nav class="navbar">
+    <nav class="navigation">
         <div class="name_logo">
-            <img class="navbar-brand" src="/images/logo.png" width="75" height="75" alt="logo">
-            <a class="navbar-brand" href="index.html">Museion</a>
-            <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <img class="navigation_image" src="/images/logo.png" width="75" height="75" alt="logo">
+            <a class="navigation_brand" href="index.html">Museion</a>
+            <!--<button class="navigation-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigationSupportedContent" aria-controls="navigationSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navigation-toggler-icon"></span>
             </button>-->
         </div>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar- nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        <div class="navigation_collapse">
+            <ul>
+                <li class="nav_item">
+                    <a class="nav_link active" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mostre_ed_eventi.html">Mostre ed eventi</a>
+                <li class="nav_item">
+                    <a class="nav_link" href="mostre_ed_eventi.html" aria-current="page">Mostre ed eventi</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="biglietti.html">Biglietti</a>
+                <li class="nav_item">
+                    <a class="nav_link" href="#">Lavora con noi</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contatti</a>
+                <li class="nav_item">
+                    <a class="nav_link" href="#">Contatti</a>
                 </li>
             </ul>
         </div>
@@ -39,13 +40,13 @@
     </nav>
 </header>
 <main>
- <div class="container">
-     <img class="full-width-img" src="/images/visita_2.jpg" alt="visita">
-     <div class="testo_immagine">
-         <h1>Scopri l'arte</h1>
-         <p>Trova la visita guidata più adatta a te</p>
-     </div>
- </div>
+    <div class="img_container">
+        <img class="full_width_img" src="/images/visita_2.jpg" alt="visita">
+        <div class="testo_immagine">
+            <h1>Scopri l'arte</h1>
+            <p>Trova la visita guidata più adatta a te</p>
+        </div>
+    </div>
     <section class="parte_1">
         <p>In primo piano</p>
         <div class="row_images">
@@ -53,19 +54,22 @@
                 <div class="image-wrapper_1">
                     <img src="/images/mostra_1.jpg" alt="prima mostra">
                 </div>
-                <figcaption>Colazione impressionista</figcaption>
+                <figcaption>Al museo con le stelle</figcaption>
+                <a href="mostre_ed_eventi.html" class="btn_mostra">Vai alla mostra</a>
             </figure>
             <figure class="rows">
                 <div class="image-wrapper_1">
                     <img src="/images/mostra_2.jpeg" alt="seconda mostra">
                 </div>
-                <figcaption>Van Gogh</figcaption>
+                <figcaption>Miti a fumetti</figcaption>
+                <a href="mostre_ed_eventi.html" class="btn_mostra">Vai alla mostra</a>
             </figure>
             <figure class="rows">
                 <div class="image-wrapper_1">
                     <img src="/images/mostra_3.jpg" alt="terza mostra">
                 </div>
-                <figcaption>Visita la nostra galleria</figcaption>
+                <figcaption>Man Ray</figcaption>
+                <a href="mostre_ed_eventi.html" class="btn_mostra">Vai alla mostra</a>
             </figure>
         </div>
     </section>
@@ -79,6 +83,7 @@
                 <figcaption class="description">
                     <h3>Wassily Kandinsky</h3>
                     <p>Una mostra dedicata ad uno dei più celebri artisti dell'astrattismo </p>
+                    <a href="biglietti.html" class="btn_novita">Acquista biglietti</a>
                 </figcaption>
             </figure>
             <figure class="columns">
@@ -88,6 +93,7 @@
                 <figcaption class="description">
                     <h3>Modern Art</h3>
                     <p>Selezione di opere contemporanee in esposizione temporanea, fino al 27/09/2026</p>
+                    <a href="biglietti.html" class="btn_novita">Acquista biglietti</a>
                 </figcaption>
             </figure>
             <figure class="columns">
@@ -97,6 +103,7 @@
                 <figcaption class="description">
                     <h3>Evento serale</h3>
                     <p>Una serata dedicata agli artisti più celebri e alle loro opere più famose. Uno sguardo ravvicinato alla vita grazie alle testimonianze di amici e parenti</p>
+                    <a href="biglietti.html" class="btn_novita">Acquista biglietti</a>
                 </figcaption>
             </figure>
         </div>
@@ -109,6 +116,48 @@
         <div class="civico">
             <p>Via da qui, 27 Casa Mia</p>
             <p>Se non ci trovate chiedete in giro!!</p>
+        </div>
+    </section>
+    <section class="container my-5">
+        <h2 class="mb-4 text-center">📅 Prossimi Eventi</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <!-- Evento 1 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Laboratorio per bambini</h5>
+                        <span class="badge bg-primary mb-2">Sabato 28 Settembre</span>
+                        <p class="card-text">Un pomeriggio creativo tra colori e forme ispirato a Kandinsky.</p>
+                        <a href="#" class="btn btn-outline-primary mt-auto">Scopri di più</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Evento 2 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Visita guidata serale</h5>
+                        <span class="badge bg-success mb-2">Venerdì 4 Ottobre</span>
+                        <p class="card-text">Tour esclusivo con guida esperta tra le opere dell’astrattismo.</p>
+                        <a href="#" class="btn btn-outline-success mt-auto">Prenota ora</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Evento 3 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Conferenza: Arte e Musica</h5>
+                        <span class="badge bg-warning text-dark mb-2">Domenica 12 Ottobre</span>
+                        <p class="card-text">Un dialogo tra esperti sull’influenza della musica nell’arte astratta.</p>
+                        <a href="#" class="btn btn-outline-warning mt-auto">Iscriviti</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 </main>

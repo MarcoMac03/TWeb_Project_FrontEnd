@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/area_riservata.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/logo.png" type="image/png">
+    <title>MyMuseion</title>
+</head>
+<body>
+<header class="head">
+    <nav class="navigation">
+        <div class="name_logo">
+            <img class="navigation_image" src="/images/logo.png" width="75" height="75" alt="logo">
+            <a class="navigation_brand" href="index.html">Museion</a>
+            <!--<button class="navigation-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigationSupportedContent" aria-controls="navigationSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navigation-toggler-icon"></span>
+            </button>-->
+        </div>
+        <div class="navigation_collapse">
+            <ul>
+                <li class="nav_item">
+                    <a class="nav_link" href="index.html">Home</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="mostre_ed_eventi.html" aria-current="page">Mostre ed eventi</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="#">Lavora con noi</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="#">Contatti</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section class="container my-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <img src="/images/avatar.png" alt="Avatar" class="rounded-circle mb-3" width="110" height="110">
+                    <h5 class="card-title">Benvenuto</h5>
+                    <p class="text-muted">Utente registrato dal 2023</p>
+                    <a href="/logout" class="btn btn-outline-danger btn-sm">Esci</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-8">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title"> I tuoi biglietti</h5>
+                    <p>Hai 2 biglietti attivi per la mostra “Kandinsky”.</p>
+                    <a href="/biglietti" class="btn btn-outline-dark">Gestisci biglietti</a>
+                </div>
+            </div>
+
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title"> Eventi salvati</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Visita serale – 4 Ottobre</li>
+                        <li class="list-group-item">Conferenza “Arte e Musica” – 12 Ottobre</li>
+                    </ul>
+                    <a href="/eventi" class="btn btn-outline-dark">Visualizza tutti</a>
+                </div>
+            </div>
+
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title"> Impostazioni</h5>
+                    <a href="/profilo" class="btn btn-outline-dark">Modifica profilo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

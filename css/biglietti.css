@@ -1,0 +1,179 @@
+html body {
+    padding: 0;
+    margin: 0;
+    background-color: seashell;
+    font-family: "Montserrat", sans-serif;
+}
+
+.head {
+    background-color: black;
+    padding: 5px 15px 5px 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name_logo {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.navbar-collapse ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin-left: -10px;
+    padding: 0;
+}
+
+.navbar-collapse ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+}
+
+.navbar-collapse ul li a:hover {
+    color: #ddd;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.btn {
+    font-size: 15px;
+    padding: 15px 24px;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+}
+
+.btn:hover {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+#form-acquisto {
+    background-color: #ffffff;
+    padding: 2rem 3rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+#form-acquisto label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+}
+
+#form-acquisto input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+#form-acquisto input[type="number"]:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+
+#form-acquisto button[type="submit"] {
+    background-color: rgb(37, 37, 37);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#form-acquisto button[type="submit"]:hover {
+    background-color: rgb(191, 191, 191);
+    color: black;
+}
+
+@media (max-width: 500px) {
+    #form-acquisto {
+        padding: 1rem;
+    }
+
+    #form-acquisto button[type="submit"] {
+        width: 100%;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    margin-top: 50px;
+}
+
+.footer_left {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.footer_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: -70px;
+    padding: 20px;
+}
+
+.link_footer {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+.link_footer:hover {
+    color: #cdc2bf;
+    text-decoration: underline;
+}
+
+
+
+.footer_right {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-right: 50px;
+    gap: 15px;
+}
+
+.footer_right div {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
